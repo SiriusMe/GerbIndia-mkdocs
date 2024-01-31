@@ -7,4 +7,4 @@ nav:
   - Backend services: backend.md
   - Frontend services: frontend.md
   - User Interface: ui.md
-
+  - Troubleshooting: troubleshoot.md

@@ -311,7 +311,12 @@ In the context of live data presentation, WebSockets enable a persistent, bidire
 ####Endpoint for websocket
         
     ws://localhost/live_recent_ws
-        
+
+*Location of the websocket*:
+
+The main functionality involving Websockets is implemented in the  *'main.py'*  file, refer to this file to understand the integration and usage of Websockets within the project.
+
+
 ###Docker
 ####Using Docker for Containerized Deployment
 
