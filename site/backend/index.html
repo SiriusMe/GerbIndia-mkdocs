@@ -157,9 +157,6 @@
                 <li class="third-level"><a href="#how-it-works">How It Works</a></li>
                 <li class="third-level"><a href="#closing-the-connection">Closing the Connection</a></li>
                 <li class="third-level"><a href="#endpoint-for-websocket">Endpoint for websocket</a></li>
-            <li class="second-level"><a href="#docker">Docker</a></li>
-                
-                <li class="third-level"><a href="#using-docker-for-containerized-deployment">Using Docker for Containerized Deployment</a></li>
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
@@ -489,48 +486,7 @@ When the token is sent back to the API, it'll verify if the token is valid then 
 <pre><code>ws://localhost/live_recent_ws
 </code></pre>
 <p><em>Location of the websocket</em>:</p>
-<p>The main functionality involving Websockets is implemented in the  <em>'main.py'</em>  file, refer to this file to understand the integration and usage of Websockets within the project.</p>
-<h3 id="docker">Docker</h3>
-<h4 id="using-docker-for-containerized-deployment">Using Docker for Containerized Deployment</h4>
-<p>Follow these steps to build, tag, push, and run your Docker container:</p>
-<ol>
-<li>
-<p><strong>Build the Docker Image</strong>:</p>
-<pre><code> docker build -t &lt;img_name&gt;:&lt;tag_name&gt; .
-</code></pre>
-<p>This command builds a Docker image using the Dockerfile in the current directory, tagging it with the specified image name and version.</p>
-</li>
-<li>
-<p><strong>Tag the Docker Image:</strong></p>
-<pre><code> docker tag &lt;img_name&gt;:&lt;tag_name&gt; &lt;username&gt;/&lt;repo_name&gt;:&lt;tag&gt;
-</code></pre>
-<p>Tag the previously built image with your Docker Hub username, repository name, and desired version tag.</p>
-</li>
-<li>
-<p><strong>Login to Docker Hub:</strong></p>
-<p>Ensure you are logged in to Docker Hub before pushing the image. Use the following command and follow the prompts.</p>
-<pre><code>docker login
-</code></pre>
-</li>
-<li>
-<p><strong>Push the Docker Image:</strong></p>
-<pre><code>docker push &lt;username&gt;/&lt;repo_name&gt;:&lt;tag_name&gt;
-</code></pre>
-<p>Upload the tagged Docker image to your Docker Hub repository.</p>
-</li>
-<li>
-<p><strong>Run the Docker Container:</strong></p>
-<pre><code>docker run -e --name &lt;container_name&gt; -p &lt;p_num&gt;:&lt;p_num&gt; &lt;username&gt;/&lt;repo_name&gt;:&lt;tag_name&gt;
-</code></pre>
-</li>
-</ol>
-<p>Deploy a container from the specified image, setting environment variables and mapping ports as needed.</p>
-<h5 id="key-points">Key Points:</h5>
-<ul>
-<li>Ensure you replace placeholders such as img_name, tag_name, username, repo_name, and container_name with your actual values.</li>
-<li>The -e option in the docker run command sets an environment variable in the container.</li>
-<li>Adjust the IP address, port mappings, and any other parameters based on your specific requirements.</li>
-</ul></div>
+<p>The main functionality involving Websockets is implemented in the  <em>'main.py'</em>  file, refer to this file to understand the integration and usage of Websockets within the project.</p></div>
         
         
     </div>
